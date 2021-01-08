@@ -11,9 +11,11 @@ container.appendChild(element)
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Exercises from './pages/Exercises'
+import 'bootstrap/dist/css/bootstrap.css'
+import App from './components/App'
 
-
-const user={
+/*const user={
   firstname:'Rocio',
   lastname:'Poppe',
   //avatar:'https://avatar.tobi.sh/'
@@ -33,7 +35,7 @@ const element=
   <div>
     <h1>{getGreeting(user)}</h1>
   </div>
-
+*/
 const container=document.getElementById('root')
 
-ReactDOM.render(element,container)
+ReactDOM.render(<App/>,container)
